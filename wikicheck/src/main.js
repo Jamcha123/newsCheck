@@ -4,7 +4,7 @@ import { GoogleGenAI } from '@google/genai'
 import {AzureKeyCredential} from '@azure/core-auth'
 import ModelClient, {isUnexpected} from '@azure-rest/ai-inference'
 
-const ai = new ModelClient("https://aistudioaiservices308224805493.services.ai.azure.com/models", new AzureKeyCredential("usyY2pnacLaZgXJE6Dhrg7A5QJOCVGTFldIdyKPBdhOKoiUXLKTzJQQJ99BGACfhMk5XJ3w3AAAAACOGsa71"))
+const ai = new ModelClient("https://aistudioaiservices308224805493.services.ai.azure.com/models", new AzureKeyCredential(""))
 
 chrome.tabs.query({active: true, lastFocusedWindow: true}, async (tabs) => {
   const link = new URL(tabs[0]["url"])
@@ -17,7 +17,7 @@ chrome.tabs.query({active: true, lastFocusedWindow: true}, async (tabs) => {
   const article = "https://en.wikipedia.org/w/rest.php/v1/page/" + target
   const webby = (await axios.get(article))["data"]
   
-  const search = "https://www.googleapis.com/customsearch/v1?key=AIzaSyAdCP1jtNteYDLMsBBrbUlrxdOExlUEt3s&cx=53b4f01c6912d484d&q=" + webby["title"]
+  const search = "https://www.googleapis.com/customsearch/v1?key=&cx=53b4f01c6912d484d&q=" + webby["title"]
   const searches = (await axios.get(search))["data"]["items"]
   let ans = ""
   for(let i = 0; i != searches.length; i++){
