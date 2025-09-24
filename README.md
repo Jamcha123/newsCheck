@@ -6,3 +6,4 @@ newsCheck are a bunch of extensions that can fact check and generater short summ
 list of browser extensions:
     
     1. WikiCheck - With a click of a button while reading an wikipedia article, you get a fact checked and summarized wikipedia article summary.
+    wikipedia link: https://en.wikipedia.org/wiki/Main_Page
