@@ -1,4 +1,4 @@
-#my privacy policy
+My Privacy Policy
 
 1. How i handle user data: 
 
